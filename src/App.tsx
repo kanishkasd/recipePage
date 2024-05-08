@@ -2,7 +2,7 @@ import banner from "./assets/images/image-omelette.jpeg";
 const App = () => {
   return (
     <>
-      <section>
+      <section className="">
         <div className="">
           <img src={banner} />
 

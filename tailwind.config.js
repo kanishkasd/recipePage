@@ -14,6 +14,20 @@ export default {
         Nutmeg: "hsl(14, 45%, 36%)",
         "Dark Raspberry": "hsl(332, 51%, 32%)",
       },
+      fontFamily: {
+        outfit: ["outfit", "sans"],
+        "young-serif": ["youngserif", "serif"],
+      },
+      fontWeight: {
+        outfit: {
+          light: 400,
+          regular: 500,
+          bold: 800,
+        },
+        "young-serif": {
+          light: 400,
+        },
+      },
     },
   },
   plugins: [],
