@@ -6,7 +6,7 @@ const App = () => {
         <div className="">
           <img src={banner} />
 
-          <h1 className="">Simple Omelette Recipe</h1>
+          <h1 className="font-outfit font-regular">Simple Omelette Recipe</h1>
           <p>An easy and quick dish, perfect for any meal.</p>
           <div className="">
             This classic omelette combines beaten eggs cooked to perfection,

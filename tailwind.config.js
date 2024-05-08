@@ -21,7 +21,7 @@ export default {
       fontWeight: {
         outfit: {
           light: 400,
-          regular: 500,
+          regular: 600,
           bold: 800,
         },
         "young-serif": {
