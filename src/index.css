@@ -51,17 +51,21 @@
   content: "";
 }
 
-/* custom list 2*/
+/* custom ordered list*/
 .custom-ordered-list {
-  @apply list-none pl-0 counter-reset: ordered-list;
+  @apply list-none pl-0;
+}
+
+.custom-ordered-list {
+  counter-reset: ordered-list;
 }
 
 .custom-ordered-list li {
-  @apply relative pl-12 mb-4;
+  @apply relative pl-12 mb-3;
 }
 
 .custom-ordered-list li::before {
-  @apply absolute left-0 top-2 w-8 h-8 flex items-center justify-center bg-green-500 rounded-full text-white font-bold;
+  @apply absolute left-0 top-0 w-8 h-8 flex justify-center   text-Dark-Raspberry font-bold;
   counter-increment: ordered-list;
-  content: counter(ordered-list);
+  content: counter(ordered-list) ".";
 }
