@@ -2,9 +2,11 @@ import banner from "./assets/images/image-omelette.jpeg";
 const App = () => {
   return (
     <>
-      <section className="bg-Dark-Charcoal flex align-middle justify-center ">
-        <div className="sm:w-2/5 bg-white">
-          <img src={banner} />
+      <section className="sm:bg-Dark-Charcoal md:bg-Eggshell flex align-middle justify-center md:p-5">
+        <div className="sm:w-2/5 bg-white md:rounded-lg md:border md:border-white ">
+          <div className="md:p-5">
+            <img className=" md:rounded-lg" src={banner} />
+          </div>
           <div className="p-7">
             <h1 className="font-young-serif text-3xl font-bold">
               Simple Omelette Recipe
@@ -90,19 +92,27 @@ const App = () => {
             <table className="font-outfit text-Wenge-Brown ml-5">
               <tr className="border-b border-grey-200">
                 <td>Calories</td>
-                <td className="px-10 py-2 text-Nutmeg font-bold">277kcal</td>
+                <td className="sm:px-10 md:px-40 py-2  text-Nutmeg font-bold">
+                  277kcal
+                </td>
               </tr>
               <tr className="border-b border-grey-200">
                 <td>Carbs</td>
-                <td className="px-10 py-2 text-Nutmeg font-bold">0g</td>
+                <td className="sm:px-10 md:px-40 py-2  text-Nutmeg font-bold">
+                  0g
+                </td>
               </tr>
               <tr className="border-b border-grey-200">
                 <td>Protein</td>
-                <td className="px-10 py-2 text-Nutmeg font-bold">20g</td>
+                <td className="sm:px-10 md:px-40 py-2  text-Nutmeg font-bold">
+                  20g
+                </td>
               </tr>
               <tr className="border-b border-grey-200">
                 <td>Fat</td>
-                <td className="px-10 py-2 text-Nutmeg font-bold">22g</td>
+                <td className="sm:px-10 md:px-40 py-2  text-Nutmeg font-bold">
+                  22g
+                </td>
               </tr>
             </table>
           </div>
