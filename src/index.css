@@ -25,3 +25,43 @@
   src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf);
   font-weight: normal;
 }
+.custom-list {
+  @apply list-none pl-0;
+}
+
+.custom-list li {
+  @apply relative pl-8 mb-0;
+}
+
+.custom-list li::before {
+  @apply absolute left-0 top-3 w-1 h-1 bg-Dark-Raspberry rounded-full;
+  content: "";
+}
+/* custom list 2*/
+.custom-list2 {
+  @apply list-none pl-0;
+}
+
+.custom-list2 li {
+  @apply relative pl-6 mb-0;
+}
+
+.custom-list2 li::before {
+  @apply absolute left-0 top-4 w-1 h-1 bg-Dark-Raspberry rounded-full;
+  content: "";
+}
+
+/* custom list 2*/
+.custom-ordered-list {
+  @apply list-none pl-0 counter-reset: ordered-list;
+}
+
+.custom-ordered-list li {
+  @apply relative pl-12 mb-4;
+}
+
+.custom-ordered-list li::before {
+  @apply absolute left-0 top-2 w-8 h-8 flex items-center justify-center bg-green-500 rounded-full text-white font-bold;
+  counter-increment: ordered-list;
+  content: counter(ordered-list);
+}
